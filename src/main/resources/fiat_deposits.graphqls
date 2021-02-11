@@ -1,0 +1,9 @@
+extend type Query {
+    findFiatDepositByRequestId(requestId: String!): FiatDeposit
+}
+
+type FiatDeposit {
+    id: Int!
+    requestId: String!
+    header: String
+}
